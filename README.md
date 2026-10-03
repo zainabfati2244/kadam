@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -95,3 +96,7 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+=======
+# kadam
+Kadam is a mobile app designed to provide customers with a seamless, fast, and modern shoe shopping experience, while giving store owners complete real-time control over their business and inventory.
+>>>>>>> e27f297ea2c4aba8a71b82dc681af7db2fd80fca

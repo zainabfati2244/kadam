@@ -1,4 +1,4 @@
-package com.shoezia
+package com.kadam
 
 import android.app.Application
 import com.facebook.react.PackageList

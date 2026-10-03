@@ -1,0 +1,5 @@
+import React, { Component, type ErrorInfo, type ReactNode } from 'react';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
+type Props = { children: ReactNode }; type State = { hasError: boolean };
+export class ErrorBoundary extends Component<Props, State> { state: State = { hasError: false }; static getDerivedStateFromError() { return { hasError: true }; } componentDidCatch(error: Error, info: ErrorInfo) { console.error('Unhandled UI error', error, info); } render() { if (!this.state.hasError) return this.props.children; return <View style={s.root}><Text style={s.title}>Something went wrong</Text><Text style={s.copy}>Please try again.</Text><Pressable style={s.button} onPress={() => this.setState({ hasError: false })}><Text>TRY AGAIN</Text></Pressable></View>; } }
+const s = StyleSheet.create({ root:{flex:1,alignItems:'center',justifyContent:'center',backgroundColor:'#1A1A1A',padding:24},title:{color:'#F5F0E8',fontSize:24,fontWeight:'800'},copy:{color:'#A8A8A8',marginTop:8},button:{marginTop:24,backgroundColor:'#C9A84C',paddingHorizontal:20,paddingVertical:12,borderRadius:10} });
